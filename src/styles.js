@@ -1,6 +1,13 @@
 import styled, { css, createGlobalStyle } from "styled-components";
 import * as palette from './styleVars';
 
+export const H2 = styled.h2`
+    
+    text-align: center;
+    color: ${palette.var_FontColour};  
+    font-family: Cambria;
+
+`;
 
 
 //IMPORTANT! Global style mean to style the body of the entire app
@@ -62,7 +69,7 @@ export const Main = styled.div`
   gap: 0.25rem;
   padding: 0.25rem;
   align-items: center;
-  background: ${palette.var_TertiaryColour};  
+  background: ${palette.var_MainColour};  
   grid-area: main;
   justify-content: center;
   @media (max-width: 550px)
@@ -74,8 +81,34 @@ export const Main = styled.div`
 
 export const Content = styled.div`
     grid-area: sidebar;
-    background: ${palette.var_TertiaryColour};
-    border: solid rgba(200, 230, 230, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.25rem;
+    padding: 0.25rem;
+    background: ${palette.var_MainColour};  
+    
+    @media (max-width: 550px)
+    {
+        flex-direction: column;
+    }
+`;
+
+export const Button = styled.button`
+    
+    text-align: center;
+    background: ${palette.var_SecondaryColour};  
+    width: 150px;
+    border-radius: 5px;
+    margin: 10px 0px 10px 0px;
+
+    &:hover {
+        background: rgb(233,255,255);
+        transition: all 0.3s ease-in-out;
+    }
+
 `;
 
 export const Fluff = styled.div`

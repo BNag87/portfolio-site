@@ -1,10 +1,9 @@
 import React from "react";
 import {
-    MainWrapper,
     Content,
-    Navbar,
     Main,
-    Footer,
+    Button,
+    H2,
 } from "../styles"
 
 const Homepage = () => {
@@ -13,8 +12,15 @@ const Homepage = () => {
     <>
 
             
-            <Main>I am the main content (IN THE HOMEPAGE COMPONENT)</Main>
-            <Content>I am a content box (IN THE HOMEPAGE COMPONENT</Content>
+            <Main>
+                (MAIN COMPONENT)
+            </Main>
+            <Content>
+                (CONTENT COMPONENT)
+                <Button><H2>Home</H2></Button>
+                <Button><H2>About Me</H2></Button>
+                <Button><H2>Projects/Code</H2></Button>
+            </Content>
 
     </>
     )
