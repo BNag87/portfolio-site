@@ -55,7 +55,7 @@ grid-template-areas:
     width: 100vw;
     height: 100vh;
 
-    background: ${palette.var_MainColour};
+    background: ${palette.var_SecondaryColour};
     font-size: ${palette.var_FontSizeMedium};
     border: solid rgba(200, 230, 230, 0.5);
 
@@ -76,13 +76,13 @@ grid-template-areas:
 export const Navbar = styled.div`
     grid-area: nav;
     background: ${palette.var_TertiaryColour};
-    border: solid rgba(200, 230, 230, 0.5);
+    border-bottom: solid rgba(200, 230, 230, 0.5);
 `;
 
 export const Footer = styled.div`
     grid-area: footer;
     background: ${palette.var_TertiaryColour};
-    border: solid rgba(200, 230, 230, 0.5);
+    border-top: solid rgba(200, 230, 230, 0.5);
 `;
 
 export const Main = styled.div`
@@ -111,7 +111,7 @@ export const Content = styled.div`
     align-items: center;
     justify-content: center;
     border-style: none solid none none;
-    border-color: rgba(10,10,10,0.2);
+    border-color: rgba(200, 230, 230, 0.5);
     border-radius: 0px 10px 10px 0px;
 
    
