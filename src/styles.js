@@ -1,14 +1,34 @@
 import styled, { css, createGlobalStyle } from "styled-components";
 import * as palette from './styleVars';
 
+//styling for p tags. should be clearly visible but not obstructive
+export const P = styled.p`
+    
+    text-align: center;
+    color: ${palette.var_FontColour};  
+    font-size: ${palette.var_FontSizeMedium};
+    font-weight: 500;
+    padding: 0px;
+    margin: 10px;
+`;
+
 export const H2 = styled.h2`
     
     text-align: center;
     color: ${palette.var_FontColour};  
-    font-family: Cambria;
+    font-family: impact;
+    font-weight: lighter;
+    font-variant: small-caps;
 
 `;
 
+export const H3 = styled.h3`
+    
+    text-align: center;
+    color: ${palette.var_FontColour};  
+    font-variant: small-caps;
+    
+`;
 
 //IMPORTANT! Global style mean to style the body of the entire app
 export const GlobalStyle = createGlobalStyle`
@@ -17,6 +37,7 @@ export const GlobalStyle = createGlobalStyle`
     color: ${palette.var_FontColour};
     margin: 0;
     padding: 0;
+    font-family: calibri;
   }
 `;
 
@@ -54,25 +75,29 @@ grid-template-areas:
 
 export const Navbar = styled.div`
     grid-area: nav;
-    background: ${palette.var_SecondaryColour};
+    background: ${palette.var_TertiaryColour};
     border: solid rgba(200, 230, 230, 0.5);
 `;
 
 export const Footer = styled.div`
     grid-area: footer;
-    background: ${palette.var_SecondaryColour};
+    background: ${palette.var_TertiaryColour};
     border: solid rgba(200, 230, 230, 0.5);
 `;
 
 export const Main = styled.div`
-     display: flex;
-  gap: 0.25rem;
-  padding: 0.25rem;
-  align-items: center;
-  background: ${palette.var_MainColour};  
-  grid-area: main;
-  justify-content: center;
-  @media (max-width: 550px)
+    grid-area: main;
+    justify-content: center;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 0.25rem;
+    padding: 0.25rem;
+
+    background: ${palette.var_SecondaryColour};  
+
+@media (max-width: 550px)
   {
   flex-direction: column;
 
@@ -85,7 +110,11 @@ export const Content = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-style: none solid none none;
+    border-color: rgba(10,10,10,0.2);
+    border-radius: 0px 10px 10px 0px;
 
+   
     gap: 0.25rem;
     padding: 0.25rem;
     background: ${palette.var_MainColour};  
@@ -103,7 +132,7 @@ export const Button = styled.button`
     width: 150px;
     border-radius: 5px;
     margin: 10px 0px 10px 0px;
-
+    
     &:hover {
         background: rgb(233,255,255);
         transition: all 0.3s ease-in-out;
