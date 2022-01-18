@@ -11,12 +11,11 @@ const Homepage = () => {
 
     return(
     <>
-        <MainWrapper>
-            <Navbar>I am the Navbar</Navbar>
-            <Main>I am the main content</Main>
-            <Content>I am a content box</Content>
-            <Footer>I am the footer</Footer>
-        </MainWrapper>
+
+            
+            <Main>I am the main content (IN THE HOMEPAGE COMPONENT)</Main>
+            <Content>I am a content box (IN THE HOMEPAGE COMPONENT</Content>
+
     </>
     )
 };
