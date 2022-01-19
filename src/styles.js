@@ -3,13 +3,28 @@ import * as palette from './styleVars';
 
 //styling for p tags. should be clearly visible but not obstructive
 export const P = styled.p`
-    
+
+    align-items: center;
     text-align: center;
     color: ${palette.var_FontColour};  
     font-size: ${palette.var_FontSizeMedium};
     font-weight: 500;
     padding: 0px;
     margin: 10px;
+
+    ${props => props.CodeBlock && css`
+    display: flex;
+    flex-direction: column;
+        background: ${palette.var_MainColour};
+        padding: ${props => props.inputPadding || "10px 0px 10px 0px"};
+        color: black;
+        border: outset rgba(0,0,0, 0.1) 2px;
+        border-radius: 5px;
+        font-family: 'Courier New';
+        font-size: ${palette.var_FontSizeSmall};
+        font-weight: 700;
+        width: 300px;
+    `}
 `;
 
 export const H2 = styled.h2`
@@ -49,7 +64,7 @@ grid-template-areas:
     "nav nav nav nav"
     "sidebar main main main"
     "sidebar main main main"
-    "footer footer footer footer";
+    "sidebar main main main";
     text-align: center;
     
     width: 100vw;
@@ -113,6 +128,7 @@ export const Content = styled.div`
     border-style: none solid none none;
     border-color: rgba(200, 230, 230, 0.5);
     border-radius: 0px 10px 10px 0px;
+    width: 184.6px;
 
    
     gap: 0.25rem;
@@ -137,8 +153,19 @@ export const Button = styled.button`
         background: rgb(233,255,255);
         transition: all 0.3s ease-in-out;
     }
-
 `;
+
+//Styles to force a react router link in to a proper format
+
+
+export const RouterLinkStyle = styled.a`
+    text-decoration: "none";
+    text-align: center;
+    color: inherit;  
+    font-family: impact;
+    font-weight: lighter;
+    font-variant: small-caps; 
+  `;
 
 export const Fluff = styled.div`
 grid-area: main;

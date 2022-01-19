@@ -2,16 +2,33 @@ import React from "react";
 import {
     Content,
     Button,
-    H2,
 } from "../styles"
 
+import { 
+    Link,
+  } from 'react-router-dom';
+
 export const SideNavBar = () =>{
-return(
+    
+    return(
     <Content>
-    (CONTENT COMPONENT)
-        <Button><H2>Home</H2></Button>
-        <Button><H2>About Me</H2></Button>
-        <Button><H2>Projects/Code</H2></Button>
+
+            (CONTENT COMPONENT)
+            
+                <Link to="/">
+                <Button>Home</Button>
+                </Link>
+            
+                <Link to="/about">
+                <Button>About Me</Button>
+                </Link>
+
+            {/* <Button>
+                <Link to="/Proje">
+                    Projects/Code
+                </Link>
+            </Button> */}
+ 
     </Content>
 )
 
