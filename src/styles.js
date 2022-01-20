@@ -67,7 +67,7 @@ grid-template-areas:
     "sidebar main main main";
     text-align: center;
     
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 
     background: ${palette.var_SecondaryColour};
@@ -92,6 +92,8 @@ export const Navbar = styled.div`
     grid-area: nav;
     background: ${palette.var_TertiaryColour};
     border-bottom: solid rgba(200, 230, 230, 0.5);
+    position: sticky; 
+    top: 0;
 `;
 
 export const Footer = styled.div`
