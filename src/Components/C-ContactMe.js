@@ -22,16 +22,16 @@ export const ContactMe = () => {
         <ImageDiv src={Headshot} alt="Photo of me"/>  
 
         <ATag href="mailto:basilnagleva[at]hotmail[dot]co[dot]uk" inputMargin="10px">
-                <h2><FaAt/> <u>Email</u></h2> 
+                <h2><FaAt/> Email</h2> 
         </ATag>
 
 
             <ATag href="https://www.linkedin.com/in/basil-nagle-523b412b/" target="_blank" rel="noreferrer" inputMargin="0px 0px 0px 0px">
-                <h2><FaLinkedin/> <u>LinkedIn</u></h2> 
+                <h2><FaLinkedin/> LinkedIn</h2> 
             </ATag>
 
         <ATag href="https://github.com/BNag87" target="_blank" rel="noreferrer" inputMargin="10px 0px 0px 0px">
-            <h2><FaGithubSquare/> <u>Github</u></h2> 
+            <h2><FaGithubSquare/> Github</h2> 
         </ATag>
         </P>
 

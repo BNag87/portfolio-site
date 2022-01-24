@@ -84,9 +84,9 @@ export default styled(NavLink)`
 export const NLink = styled(Link)`
     
     color: black;
-    background: rgb(230,255,230);
+    background: rgb(253,250,230);
 
-    border: outset 4px rgba(20,20,190,0.3);
+    border: outset 2px rgba(20,20,190,0.2);
     border-radius: 10px;
 
     text-decoration: none;
