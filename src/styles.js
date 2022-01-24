@@ -18,10 +18,11 @@ export const P = styled.p`
         flex-direction: column;
         background: ${palette.var_MainColour};
         padding: ${props => props.inputPadding || "10px 0px 10px 0px"};
+        margin: ${props => props.inputMargin || "0px"};
         color: black;
         border: outset rgba(0,0,0, 0.1) 2px;
         border-radius: 5px;
-        font-family: 'Courier New';
+        font-family:  ${props => props.inputFontFamily || "Courier"};
         font-size: ${palette.var_FontSizeSmall};
         font-weight: 700;
         width: 300px;
