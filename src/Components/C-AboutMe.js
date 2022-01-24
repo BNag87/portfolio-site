@@ -1,10 +1,13 @@
 import React from "react";
+
+
 import {
     Main,
     H2,
     P,
     ImageDiv,
 } from "../styles"
+
 import SteamStatsIMG from '../Images/SteamStats.PNG';
 import Roll20IMG from '../Images/GifShot.PNG';
 
@@ -53,8 +56,7 @@ export const AboutMe = () => {
     <P>
         Prior to making mods for games, I also created a character sheet for use in a tabletop game that is based on Dungeons and Dragons 5e. 
         <br/>The character sheet is entirely built in HTML and CSS as it uses built in functions of the website, Roll20. 
-        <br/>The sheet itself allows players to enter their characters attributes and make dice rolls based off of them.
-        <br/> They can also input details in about any weapons they have and also attack enemies with dice rolls in the game. 
+        <br/>The sheet itself allows players to enter their characters attributes and make dice rolls based off of them.<br/> They can also input details in about any weapons they have and also attack enemies with dice rolls in the game. 
         <br/>This project took three weeks to complete, with little prior knowledge of HTML or CSS.
     </P>
     

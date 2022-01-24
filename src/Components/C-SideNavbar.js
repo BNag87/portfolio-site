@@ -4,10 +4,11 @@ import {
     Button,
     UL,
     H3,
+    NLink,
 } from "../styles"
 
 import { 
-    Link,
+    Link, NavLink,
   } from 'react-router-dom';
 
 export const SideNavBar = () =>{
@@ -16,28 +17,18 @@ export const SideNavBar = () =>{
     <Content>
 
             <H3>Navigation</H3>
-            <UL>
-                <li>
-                    <Link to="/">
-                    <Button>Home</Button>
-                    </Link>
-                </li>
 
-                <li>
-                    <Link to="/about">
-                    <Button>About Me</Button>
-                    </Link>
-                </li>
+                    <NLink to="/">
+                        Home
+                    </NLink>
 
-                <li>
-                    <Link to="/contact">
-                    <Button>Contact Me</Button>
-                    </Link>
-                </li>
-            </UL>
+                    <NLink to="/about">
+                        About Me
+                    </NLink>
 
-            
-
+                    <NLink to="/contact">
+                    Contact Me
+                    </NLink>
 
             {/* <Button>
                 <Link to="/Proje">

@@ -18,9 +18,9 @@ export const Homepage = () => {
             <br/>After this, I then took and completed a coding mastery course. Over three months, I learned how to use React to build apps and enjoy this a great deal more.
             <br/>I have taught myself several languages over the years and don't want it to just be a hobby.</P>
             <P>I prefer front-end work, though I am open to full stack as well.</P>
-            <P>On the About Me page, there are some examples of projects I've done in the past, with screenshots.
+            <P>On the About Me page, there are some examples of projects I've done in the past, with screenshots.<br/>
             <br/>On the Projects/Code page, I have snippets of code that have proven useful. There are also links to repositories I've made in my own time.</P>
-            <P>If you'd like to speak to me about employment, then head to the About Me page.</P>
+            <P>If you'd like to speak to me about employment, then head to the 'Contact Me' page.</P>
 
             <H3>Thanks for visiting!</H3>
             </Main>

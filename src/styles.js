@@ -1,4 +1,6 @@
 import styled, { css, createGlobalStyle } from "styled-components";
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import * as palette from './styleVars';
 
 // ==================================→TEXT STYLING
@@ -16,7 +18,7 @@ export const P = styled.p`
     ${props => props.CodeBlock && css`
         display: flex;
         flex-direction: column;
-        background: ${palette.var_MainColour};
+        background: ${props => props.inputBackground || "rgb(230,255,230)"};
         padding: ${props => props.inputPadding || "10px 0px 10px 0px"};
         margin: ${props => props.inputMargin || "0px"};
         color: black;
@@ -28,6 +30,85 @@ export const P = styled.p`
         width: 300px;
     `}
 `;
+
+//div for <a> tags
+export const ATag = styled.a`
+    //rules related to <a> tags
+    text-decoration: none;
+
+    background: ${props => props.inputBackground || "rgb(230,255,230)"};
+    padding: ${props => props.inputPadding || "10px 0px 10px 0px"};
+    margin: ${props => props.inputMargin || "0px"};
+    color: black;
+    border: outset rgba(0,0,0, 0.1) 2px;
+    border-radius: 5px;
+    font-family:  ${props => props.inputFontFamily || "Courier"};
+    font-size: ${palette.var_FontSizeSmall};
+    font-weight: 700;
+    width: 300px;
+
+    &:hover {
+        background: rgb(233,255,255);
+        color: rgb(130, 130, 130);
+        transition: all 0.5s ease-in-out;
+    }
+`;
+//====================RAINBOWZONE
+//'StlyedLink is for styling react router links
+// export const StyledLink = styled(Link)`
+
+//         text-decoration: none;
+//         text-align: center;
+//         background: red;
+//         border: solid 2px rgba(50 50 190);
+//         font-size: 30px;
+//         width: 50%;
+        
+    
+//     padding: 10px;
+
+//     &:hover {
+//         background: rgb(233,255,255);
+//         transition: all 0.3s ease-in-out;
+//     }
+
+// `;
+
+export default styled(NavLink)`
+  color: black;
+  background: red;
+  width: 100%;
+  
+`;
+
+export const NLink = styled(Link)`
+    
+    color: black;
+    background: rgb(230,255,230);
+
+    border: outset 4px rgba(20,20,190,0.3);
+    border-radius: 10px;
+
+    text-decoration: none;
+    text-align: center;
+    
+    padding: 10px;
+    margin: 5px;
+    
+    font-size: 23px;
+    font-family: Impact;
+    font-weight: lighter;
+
+    width: 110px;
+
+    &:hover {
+      color: rgb(130,130,130);
+      background: rgb(233,255,255);
+      transition: all 0.5s ease-in-out;
+    }
+  `;
+
+  //====================RAINBOWZONE
 
 //div to contain text without paragraph tag newlines
 export const TitleHeader = styled.div`
@@ -64,7 +145,6 @@ export const H3 = styled.h3`
 
 // ==================================→'GLOBAL' STYLING
 //IMPORTANT! Global style mean to style the body of the entire app
-
 export const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${palette.var_MainColour};
