@@ -2,6 +2,8 @@ import React from "react";
 import {
     Content,
     Button,
+    UL,
+    H3,
 } from "../styles"
 
 import { 
@@ -13,15 +15,29 @@ export const SideNavBar = () =>{
     return(
     <Content>
 
-            (CONTENT COMPONENT)
+            <H3>Navigation</H3>
+            <UL>
+                <li>
+                    <Link to="/">
+                    <Button>Home</Button>
+                    </Link>
+                </li>
+
+                <li>
+                    <Link to="/about">
+                    <Button>About Me</Button>
+                    </Link>
+                </li>
+
+                <li>
+                    <Link to="/contact">
+                    <Button>Contact Me</Button>
+                    </Link>
+                </li>
+            </UL>
+
             
-                <Link to="/">
-                <Button>Home</Button>
-                </Link>
-            
-                <Link to="/about">
-                <Button>About Me</Button>
-                </Link>
+
 
             {/* <Button>
                 <Link to="/Proje">

@@ -3,6 +3,7 @@ import {
     Main,
     H2,
     P,
+    ImageDiv,
 } from "../styles"
 import SteamStatsIMG from '../Images/SteamStats.PNG';
 import Roll20IMG from '../Images/GifShot.PNG';
@@ -13,7 +14,7 @@ export const AboutMe = () => {
     return(
     <>
         <Main>
-        (MAIN COMPONENT)
+
         <H2>About Me</H2>
         
     <P>
@@ -44,18 +45,24 @@ export const AboutMe = () => {
 
 
     <P CodeBlock inputPadding = "10px">
-        <img src={SteamStatsIMG} alt="Screenshot of steam mod statistics"/>   
+        <a href={SteamStatsIMG} target="_blank" rel="noreferrer">
+        <ImageDiv src={SteamStatsIMG} alt="Screenshot of steam mod statistics"/>  
+        </a>
     </P>
 
     <P>
         Prior to making mods for games, I also created a character sheet for use in a tabletop game that is based on Dungeons and Dragons 5e. 
         <br/>The character sheet is entirely built in HTML and CSS as it uses built in functions of the website, Roll20. 
-        <br/>The sheet itself allows players to enter their characters attributes and make dice rolls based off of them. They can also input details in about any weapons they have and also attack enemies with dice rolls in the game. 
+        <br/>The sheet itself allows players to enter their characters attributes and make dice rolls based off of them.
+        <br/> They can also input details in about any weapons they have and also attack enemies with dice rolls in the game. 
         <br/>This project took three weeks to complete, with little prior knowledge of HTML or CSS.
     </P>
     
     <P CodeBlock inputPadding = "10px">
-        <img src={Roll20IMG} alt="Screenshot of custom character sheet"/>   
+        <a href={Roll20IMG} target="_blank" rel="noreferrer">
+            <ImageDiv src={Roll20IMG} alt="Screenshot of custom character sheet"/>
+            Opens in a new tab
+        </a>
     </P>
 
             </Main>

@@ -1,6 +1,7 @@
 import styled, { css, createGlobalStyle } from "styled-components";
 import * as palette from './styleVars';
 
+// ==================================→TEXT STYLING
 //styling for p tags. should be clearly visible but not obstructive
 export const P = styled.p`
 
@@ -13,8 +14,8 @@ export const P = styled.p`
     margin: 10px;
 
     ${props => props.CodeBlock && css`
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
         background: ${palette.var_MainColour};
         padding: ${props => props.inputPadding || "10px 0px 10px 0px"};
         color: black;
@@ -25,6 +26,21 @@ export const P = styled.p`
         font-weight: 700;
         width: 300px;
     `}
+`;
+
+//div to contain text without paragraph tag newlines
+export const TitleHeader = styled.div`
+
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Impact';
+        font-size: 38px;
+        font-weight: lighter;
+        background: none;
+        padding: 10px;
+        margin: 0;
+        border: none;
+        width:auto;
 `;
 
 export const H2 = styled.h2`
@@ -45,7 +61,9 @@ export const H3 = styled.h3`
     
 `;
 
+// ==================================→'GLOBAL' STYLING
 //IMPORTANT! Global style mean to style the body of the entire app
+
 export const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${palette.var_MainColour};
@@ -56,17 +74,45 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
-//Use of CSS grid in a parent div wrapper
-export const MainWrapper = styled.div`
-display: grid;
-grid-template-rows: 0.2fr 1fr 0.5fr 0.5fr;
-grid-template-areas:
-    "nav nav nav nav"
-    "sidebar main main main"
-    "sidebar main main main"
-    "sidebar main main main";
-    text-align: center;
+// ==================================→DIV STYLING
+
+//'Divider' is an empty div meant for breaking apart elements
+export const Divider = styled.div`
+  body {
+    flex-direction: row;
+    background: red;
     
+    margin: 0;
+    padding: 0;
+    width:100%;
+    
+  }
+`;
+
+//'PairWrapper' is a wrapper meant to contain the main area and sidebar
+export const PairWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+        
+    margin: 0;
+    padding: 0;
+    width:100%;
+`;
+
+//'ImageDiv' image wrapper
+export const ImageDiv = styled.img`
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+`;
+
+//'MainWrapper' is a div that contains rendered elements. Use it for separate components
+export const MainWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
     width: 100%;
     height: 100vh;
 
@@ -74,67 +120,60 @@ grid-template-areas:
     font-size: ${palette.var_FontSizeMedium};
     border: solid rgba(200, 230, 230, 0.5);
 
-    grid-gap: 0.25rem;
     transition: all 0.25s ease-in-out;
-    @media (max-width: 550px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1fr;
-    grid-template-areas:
-      "nav"
-      "sidebar"
-      "main"
-      "content"
-      "footer";
-    }
 `;
 
+//'MainWrapper' is a div that contains rendered elements. Use it for separate components
 export const Navbar = styled.div`
-    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    
     background: ${palette.var_TertiaryColour};
-    border-bottom: solid rgba(200, 230, 230, 0.5);
-    position: sticky; 
+    position: fixed; 
     top: 0;
+    width:100%;
+    
+    justify-content: space-between;
 `;
 
-export const Footer = styled.div`
-    grid-area: footer;
-    background: ${palette.var_TertiaryColour};
-    border-top: solid rgba(200, 230, 230, 0.5);
-`;
-
+//Styling for a main div (where content gets rendered through react routers)
 export const Main = styled.div`
-    grid-area: main;
-    justify-content: center;  
     display: flex;
     flex-direction: column;
+    justify-content: center;  
     align-items: center;
 
-    gap: 0.25rem;
-    padding: 0.25rem;
-
+    height: 100%;
+    width: 100%;
     background: ${palette.var_SecondaryColour};  
-
-@media (max-width: 550px)
-  {
-  flex-direction: column;
-
-  }
+    
+    margin-left: 186.6px;
+    margin-top: 50px;
 `;
 
+//styling for an unordered list
+export const UL = styled.ul`
+    list-style-type: none;
+    margin: 0;
+    padding: 0;   
+    height: 100%;
+    overflow: auto;
+`
+//Side navbar css rules
 export const Content = styled.div`
-    grid-area: sidebar;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+
     border-style: none solid none none;
     border-color: rgba(200, 230, 230, 0.5);
-    border-radius: 0px 10px 10px 0px;
+    
     width: 184.6px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 66px;
 
-   
-    gap: 0.25rem;
-    padding: 0.25rem;
     background: ${palette.var_MainColour};  
     
     @media (max-width: 550px)
@@ -150,6 +189,7 @@ export const Button = styled.button`
     width: 150px;
     border-radius: 5px;
     margin: 10px 0px 10px 0px;
+    padding: 10px;
     
     &:hover {
         background: rgb(233,255,255);
@@ -158,9 +198,7 @@ export const Button = styled.button`
 `;
 
 //Styles to force a react router link in to a proper format
-
-
-export const RouterLinkStyle = styled.a`
+export const RouterLinkStyle = styled.link`
     text-decoration: "none";
     text-align: center;
     color: inherit;  
@@ -168,10 +206,3 @@ export const RouterLinkStyle = styled.a`
     font-weight: lighter;
     font-variant: small-caps; 
   `;
-
-export const Fluff = styled.div`
-grid-area: main;
-color: ${palette.var_SecondaryColour};
-background: ${palette.var_TertiaryColour};
-border: solid rgba(200, 230, 230, 0.5);
-`;
