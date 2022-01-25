@@ -1,22 +1,19 @@
 import React from "react";
 import {
     Content,
-    Button,
-    UL,
     H3,
     NLink,
 } from "../styles"
 
-import { 
-    Link, NavLink,
-  } from 'react-router-dom';
+//------------------→React Icons Imports
+import { BsSignpostSplit } from 'react-icons/bs';
 
 export const SideNavBar = () =>{
     
     return(
     <Content>
 
-            <H3>Navigation</H3>
+            <H3><BsSignpostSplit size={70}/></H3>
 
                     <NLink to="/">
                         Home
@@ -26,16 +23,14 @@ export const SideNavBar = () =>{
                         About Me
                     </NLink>
 
+                    <NLink to="/projects">
+                    Projects
+                    </NLink>
+
                     <NLink to="/contact">
                     Contact Me
                     </NLink>
 
-            {/* <Button>
-                <Link to="/Proje">
-                    Projects/Code
-                </Link>
-            </Button> */}
- 
     </Content>
 )
 

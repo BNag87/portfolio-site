@@ -7,8 +7,9 @@ export const TopNavbar = () => {
 
     return(
     <Navbar>
-        <TitleHeader>Welcome!</TitleHeader>
-        <TitleHeader>Bazs Portfolio Site</TitleHeader>
+        <TitleHeader inputMargin="0px 0px 0px 15px">Portfolio</TitleHeader>
+        
+        <TitleHeader>Basil Nagle</TitleHeader>
     </Navbar>
     )
 };

@@ -1,5 +1,4 @@
 import styled, { css, createGlobalStyle } from "styled-components";
-import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import * as palette from './styleVars';
 
@@ -53,26 +52,7 @@ export const ATag = styled.a`
         transition: all 0.5s ease-in-out;
     }
 `;
-//====================RAINBOWZONE
-//'StlyedLink is for styling react router links
-// export const StyledLink = styled(Link)`
 
-//         text-decoration: none;
-//         text-align: center;
-//         background: red;
-//         border: solid 2px rgba(50 50 190);
-//         font-size: 30px;
-//         width: 50%;
-        
-    
-//     padding: 10px;
-
-//     &:hover {
-//         background: rgb(233,255,255);
-//         transition: all 0.3s ease-in-out;
-//     }
-
-// `;
 
 export default styled(NavLink)`
   color: black;
@@ -108,8 +88,6 @@ export const NLink = styled(Link)`
     }
   `;
 
-  //====================RAINBOWZONE
-
 //div to contain text without paragraph tag newlines
 export const TitleHeader = styled.div`
 
@@ -120,7 +98,7 @@ export const TitleHeader = styled.div`
         font-weight: lighter;
         background: none;
         padding: 10px;
-        margin: 0;
+        margin: ${props => props.inputMargin || "0"};
         border: none;
         width:auto;
 `;
@@ -255,7 +233,7 @@ export const Content = styled.div`
     left: 0;
     top: 66px;
 
-    background: ${palette.var_MainColour};  
+    background: ${palette.var_NavGradient};  
     
     @media (max-width: 550px)
     {
