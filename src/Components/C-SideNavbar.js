@@ -3,6 +3,7 @@ import {
     Content,
     H3,
     NLink,
+    P,
 } from "../styles"
 
 //------------------→React Icons Imports
@@ -30,6 +31,10 @@ export const SideNavBar = () =>{
                     <NLink to="/contact">
                     Contact Me
                     </NLink>
+
+                    <P CodeBlock inputMargin="10px" inputWidth="auto" inputBorder="none">
+                        Made with React
+                    </P>
 
     </Content>
 )

@@ -21,12 +21,27 @@ export const P = styled.p`
         padding: ${props => props.inputPadding || "10px 0px 10px 0px"};
         margin: ${props => props.inputMargin || "0px"};
         color: black;
-        border: outset rgba(0,0,0, 0.1) 2px;
+        border: ${props => props.inputBorder || "outset rgba(0,0,0, 0.1) 2px"};
         border-radius: 5px;
         font-family:  ${props => props.inputFontFamily || "Courier"};
         font-size: ${palette.var_FontSizeSmall};
         font-weight: 700;
-        width: 300px;
+        width: ${props => props.inputWidth || "300px"};
+    `}
+
+    ${props => props.FancyBlock && css`
+        display: flex;
+        flex-direction: column;
+        background: ${props => props.inputBackground || "rgb(230,255,230)"};
+        padding: ${props => props.inputPadding || "10px 0px 10px 0px"};
+        margin: ${props => props.inputMargin || "10px"};
+        color: black;
+        border: outset rgba(0,0,0, 0.1) 2px;
+        border-radius: 5px;
+        font-family:  ${props => props.inputFontFamily || "calibri"};
+        font-size: ${palette.var_FontSizeMedium};
+        font-weight: 500;
+        width:  ${props => props.inputWidth || "70%"};
     `}
 `;
 

@@ -51,7 +51,7 @@ export const Projects = () => {
                         This is a project I worked on as part of a team of five.<br/>
                         It's a text-adventure game, written in Python.<br/>
                         It features a combat system and branching choices as well as victory/loss conditions.<br/>
-                        Here, we learned how every developer wants to add more features, but don't have the time to.<br/>
+                        Here, we learned how every developer wants to add more features, but usually won't have the time to.<br/>
                     </P>
                 </P>
 
