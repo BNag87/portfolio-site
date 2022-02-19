@@ -27,6 +27,7 @@ export const P = styled.p`
         font-size: ${palette.var_FontSizeSmall};
         font-weight: 700;
         width: ${props => props.inputWidth || "300px"};
+        height: ${props => props.inputHeight || "auto"};
     `}
 
     ${props => props.FancyBlock && css`
@@ -158,7 +159,19 @@ export const Divider = styled.div`
     
     margin: 0;
     padding: 0;
-    width:100%;
+    width:95%;
+    
+  }
+`;
+
+export const Splitter = styled.div`
+  body {
+    background: black;
+    
+    margin: 0;
+    padding: 0;
+    height: 500px;
+    width: 10%;
     
   }
 `;
@@ -167,7 +180,9 @@ export const Divider = styled.div`
 export const PairWrapper = styled.div`
     display: flex;
     flex-direction: row;
-        
+    flex-wrap: wrap;
+    justify-content: center;
+
     margin: 0;
     padding: 0;
     width:100%;
@@ -184,15 +199,17 @@ export const ImageDiv = styled.img`
 //'MainWrapper' is a div that contains rendered elements. Use it for separate components
 export const MainWrapper = styled.div`
     display: flex;
-    flex-direction: column;
-
+    flex-direction: ${props => props.inputFlexDirection || "Column"};
+    
+    align-items: center;
     text-align: center;
+  
     width: 100%;
     height: 100vh;
 
     background: ${palette.var_SecondaryColour};
     font-size: ${palette.var_FontSizeMedium};
-    border: solid rgba(200, 230, 230, 0.5);
+    
 
     transition: all 0.25s ease-in-out;
 `;
