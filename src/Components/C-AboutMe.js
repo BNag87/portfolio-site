@@ -5,13 +5,7 @@ import {
     Main,
     H2,
     P,
-    ImageDiv,
-    ATag,
 } from "../styles"
-
-import SteamStatsIMG from '../Images/SteamStats.PNG';
-
-
 
 export const AboutMe = () => {
 
