@@ -52,10 +52,10 @@ export const Projects = () => {
                     </H3>
 
                     <P CodeBlock>
-                        This is a persistent project I can continually add to.<br/>
-                        It's a collection of tools and references that make running a game of DnD easier.<br/>
-                        Several components exist with more planned for the future.<br/>
-                        It uses React, MUI components, JSON data and styled-components.<br/>
+                        This is a persistent project I can continually add to.<br/><br/>
+                        It's a collection of tools and references that make running a game of DnD easier.<br/><br/>
+                        Several components exist with more planned for the future.<br/><br/>
+                        It uses React, MUI components, JSON data and styled-components.<br/><br/>
                         <a href="https://dmsak.netlify.app" target="_blank" rel="noreferrer">
                             [Deployed app]
                         </a>
@@ -72,10 +72,10 @@ export const Projects = () => {
                     </H3>
 
                     <P CodeBlock>
-                        This is a mod for the game Rimworld.<br/>
-                        It adds firearms from the mass effect universe to the game.<br/>
-                        The mod itself is published on the Steam workshop.<br/>
-                        It has entirely positive reviews and over one thousand downloads to date.<br/>
+                        This is a mod for the game Rimworld.<br/><br/>
+                        It adds firearms from the Mass Effect universe to the game.<br/><br/>
+                        The mod itself is published on the Steam workshop.<br/><br/>
+                        It has entirely positive reviews and over one thousand downloads to date.<br/><br/>
                         I used Photoshop, Audacity and XML definitions to give the weapons their attributes in game.<br/>
                     </P>
                 </P>
@@ -89,11 +89,11 @@ export const Projects = () => {
                     </H3>
 
                     <P CodeBlock>
-                        A portfolio website meant to showcase my aptitude for web development.<br/>
-                        Built with React, MUI and styled-components.<br/>
-                        Designed to be minimalist and only use four colours throughout.<br/>
-                        Light blues are used to instill a sense of trustworthiness.<br /> 
-                        Links are also provided to my Github, email and LinkedIn.<br/>
+                        A portfolio website meant to showcase my aptitude for web development.<br/><br/>
+                        Built with React, MUI and styled-components.<br/><br/>
+                        Designed to be minimalist and only use four colours throughout.<br/><br/>
+                        Light blues are used to instill a sense of trustworthiness.<br/><br/>
+                        Links are also provided to my Github, email and LinkedIn.<br/><br/>
                     </P>
                 </P>                
 
@@ -106,10 +106,10 @@ export const Projects = () => {
                     </H3>
 
                     <P CodeBlock>
-                        This is a character sheet for use in a tabletop game online.<br/>
-                        It's made with HTML and CSS as it uses built in functions of <a href={Roll20IMG} target="_blank" rel="noreferrer">Roll20.<br/></a>
-                        Players can enter their characters attributes and make dice rolls based off of them.<br/>
-                        They can also resolve attacks with dice rolls that rely on the attributes their character has.<br/>
+                        This is a character sheet for use in a tabletop game online.<br/><br/>
+                        It's made with HTML and CSS as it uses built in functions of <a href={Roll20IMG} target="_blank" rel="noreferrer">Roll20.</a><br/><br/>
+                        Players can enter their characters attributes and make dice rolls based off of them.<br/><br/>
+                        They can also resolve attacks with dice rolls that rely on the attributes their character has.<br/><br/>
                     </P>
                 </P>
 
@@ -122,10 +122,10 @@ export const Projects = () => {
                     </H3>
 
                     <P CodeBlock>
-                        This is a project I worked on as part of a team of four.<br/>
-                        It's a text-adventure game, written in Python.<br/>
-                        It features a combat system and branching choices as well as victory/loss conditions.<br/>
-                        Here, we learned how every developer wants to add more features, but usually won't have the time to.<br/>
+                        This is a project I worked on as part of a team of four.<br/><br/>
+                        It's a text-adventure game, written in Python.<br/><br/>
+                        It features a combat system and branching choices as well as victory/loss conditions.<br/><br/>
+                        Here, we learned how every developer wants to add more features, but usually won't have the time to.<br/><br/>
                     </P>
                 </P>
 
