@@ -43,7 +43,27 @@ export const Projects = () => {
                 
                 <PairWrapper inputFlexDirection="row">
 
-{/* Personal Project 1 - Mass Effect Guns for Rimworld*/}
+{/* First Project - DMS SAK*/}
+<P CodeBlock inputPadding="10px" inputMargin="10px" inputBackground="rgb(210,235,210)">
+                    <H3>
+                        <a href="https://github.com/BNag87/Testing-Area" target="_blank" rel="noreferrer">
+                            DMs S.A.K
+                        </a>
+                    </H3>
+
+                    <P CodeBlock>
+                        This is a persistent project I can continually add to.<br/>
+                        It's a collection of tools and references that make running a game of DnD easier.<br/>
+                        Several components exist with more planned for the future.<br/>
+                        It uses React, MUI components, JSON data and styled-components.<br/>
+                        <a href="https://dmsak.netlify.app" target="_blank" rel="noreferrer">
+                            [Deployed app]
+                        </a>
+                    </P>
+                </P>
+
+
+{/* Second Project - Mass Effect Guns for Rimworld*/}
                 <P CodeBlock inputPadding="10px" inputMargin="10px" inputBackground="rgb(210,235,210)">
                     <H3>
                         <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2020640738" target="_blank" rel="noreferrer">
@@ -60,7 +80,24 @@ export const Projects = () => {
                     </P>
                 </P>
 
-{/* Personal Project 2 - DnD Character Sheet*/}
+{/* Third Project - This site!*/}
+<P CodeBlock inputPadding="10px" inputMargin="10px" inputBackground="rgb(210,235,210)">
+                    <H3>
+                        <a href="https://github.com/BNag87/portfolio-site" target="_blank" rel="noreferrer">
+                            This Website!
+                        </a>
+                    </H3>
+
+                    <P CodeBlock>
+                        A portfolio website meant to showcase my aptitude for web development.<br/>
+                        Built with React, MUI and styled-components.<br/>
+                        Designed to be minimalist and only use four colours throughout.<br/>
+                        Light blues are used to instill a sense of trustworthiness.<br /> 
+                        Links are also provided to my Github, email and LinkedIn.<br/>
+                    </P>
+                </P>                
+
+{/* Fourth project - DnD Character Sheet*/}
 <P CodeBlock inputPadding="10px" inputMargin="10px" inputBackground="rgb(210,235,210)">
                     <H3>
                     <a href="https://github.com/BNag87/FusionCharSheet" target="_blank" rel="noreferrer">
@@ -76,22 +113,7 @@ export const Projects = () => {
                     </P>
                 </P>
 
-{/* First Project - Alebas*/}
-                <P CodeBlock inputPadding="10px" inputMargin="10px" inputBackground="rgb(210,235,210)">
-                    <H3>
-                        <a href="https://github.com/BNag87/alebas-frontend" target="_blank" rel="noreferrer">
-                            Alebas Project
-                        </a>
-                    </H3>
-
-                    <P CodeBlock>
-                        This is a project I am working on with a friend.<br/>
-                        It aims to be a system manager for dealing with tabletop gaming rulesets.<br/>
-                        Currently, it works with elements of the DnD 5e ruleset.<br/>
-                        The first planned feature is to allow a user to generate a player character.<br/>
-                    </P>
-                </P>
-{/* Second Project - GotMilk?*/}
+{/* Fifth Project - GotMilk?*/}
                 <P CodeBlock inputPadding="10px" inputMargin="10px" inputBackground="rgb(210,235,210)">
                     <H3>
                         <a href="https://github.com/BNag87/gotMilkGame" target="_blank" rel="noreferrer">
@@ -100,7 +122,7 @@ export const Projects = () => {
                     </H3>
 
                     <P CodeBlock>
-                        This is a project I worked on as part of a team of five.<br/>
+                        This is a project I worked on as part of a team of four.<br/>
                         It's a text-adventure game, written in Python.<br/>
                         It features a combat system and branching choices as well as victory/loss conditions.<br/>
                         Here, we learned how every developer wants to add more features, but usually won't have the time to.<br/>
